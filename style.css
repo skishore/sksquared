@@ -13,13 +13,26 @@ div.header {
 }
 
 div.line {
-  background-color: #D8E8F0;
+  background-color: #CCDEE5;
   display: block;
   height: 1px;
   width: 100%;
 }
 
 /* The names and menu sections to the left. */
+
+body > #image {
+  background: url('mandala.svg');
+  background-position: center right -24vh;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 36vw;
+}
 
 body > #names {
   font-size: 3.6vw;
@@ -48,7 +61,7 @@ body > #menu > a.active {
 
 body > #menu > a:active,
 body > #menu > a:hover {
-  background-color: #D8E8F0;
+  background-color: #CCDEE5;
 }
 
 /* General styling for the content section. */
@@ -81,11 +94,16 @@ body > #content > div.block > div.header {
 /* The RSVP block, the first block in the content section. */
 
 body > #content > #rsvp {
-  background-color: #D8E8F0;
+  background-color: #CCDEE5;
+  background-image: url('rsvp.png');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100vh;
+  position: relative;
 }
 
 body > #content > #rsvp > .location {
@@ -95,6 +113,44 @@ body > #content > #rsvp > .location {
 
 body > #content > #rsvp > .dates {
   font-size: 1.2vw;
+  margin-bottom: 1.8vw;
+}
+
+body > #content > #rsvp > .rsvp {
+  border: 1px solid #222;
+  border-radius: 0.6vw;
+  color: #222;
+  font-size: 1.2vw;
+  margin: 0 auto 1.8vw;
+  padding: 0.6vw 1.8vw;
+  text-decoration: none;
+  width: fit-content;
+}
+
+body > #content > #rsvp > .rsvp:active,
+body > #content > #rsvp > .rsvp:hover {
+  background-color: white;
+}
+
+body > #content > #rsvp > a.next {
+  position: absolute;
+  transform: translateX(-50%);
+  bottom: 4vw;
+  left: 50%;
+}
+
+body > #content > #rsvp > a.next > svg {
+  height: 4vw;
+  width: 4vw;
+}
+
+body > #content > #rsvp > a.next > svg > .icon {
+  fill: #333;
+}
+
+body > #content > #rsvp > a.next:active > svg > .background,
+body > #content > #rsvp > a.next:hover > svg > .background {
+  fill: white;
 }
 
 /* The location block style. */
@@ -118,7 +174,7 @@ body > #content > #location > .information > a {
 
 body > #content > #location > .information > a:active,
 body > #content > #location > .information > a:hover {
-  background-color: #D8E8F0;
+  background-color: #CCDEE5;
 }
 
 body > #content > #location > .map-container {
