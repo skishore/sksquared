@@ -45,18 +45,29 @@ body > #menu {
   font-size: 1.8vw;
   position: absolute;
   top: 7.2vw;
-  left: 7.2vw;
+  left: 8.4vw;
 }
 
 body > #menu > a {
   color: #444;
   display: block;
-  padding: 0.3vw 1.2vw;
+  padding: 0.3vw 0.6vw;
   text-decoration: none;
 }
 
+body > #menu > a > div {
+  display: inline-block;
+  line-height: 0;
+  width: 1.4vw;
+}
+
 body > #menu > a.active {
-  color: black;
+  color: #222;
+}
+
+body > #menu > a.active > div:after {
+  content: "●";
+  font-size: 1.4vw;
 }
 
 body > #menu > a:active,
