@@ -102,7 +102,7 @@ body > #content > #rsvp {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 96vh;
+  height: 100vh;
   position: relative;
 }
 
@@ -132,25 +132,16 @@ body > #content > #rsvp > .rsvp:hover {
   background-color: white;
 }
 
-body > #content > #rsvp > a.next {
+body > #content > #rsvp > #rough-border {
+  background-image: url('border.svg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100%;
   position: absolute;
-  transform: translateX(-50%);
-  bottom: 4vw;
-  left: 50%;
-}
-
-body > #content > #rsvp > a.next > svg {
+  bottom: 0;
+  left: 0;
+  right: 0;
   height: 4vw;
-  width: 4vw;
-}
-
-body > #content > #rsvp > a.next > svg > .icon {
-  fill: #222;
-}
-
-body > #content > #rsvp > a.next:active > svg > .background,
-body > #content > #rsvp > a.next:hover > svg > .background {
-  fill: white;
 }
 
 /* The location block style. */
