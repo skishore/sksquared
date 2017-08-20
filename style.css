@@ -102,7 +102,7 @@ body > #content > #rsvp {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
+  height: 96vh;
   position: relative;
 }
 
@@ -145,7 +145,7 @@ body > #content > #rsvp > a.next > svg {
 }
 
 body > #content > #rsvp > a.next > svg > .icon {
-  fill: #333;
+  fill: #222;
 }
 
 body > #content > #rsvp > a.next:active > svg > .background,
