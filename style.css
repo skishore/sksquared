@@ -21,12 +21,12 @@ div.line {
 
 /* The names and menu sections to the left. */
 
-body > #image {
+body > #image,
+body > #clock > div {
   background-image: url('mandala.svg');
   background-position: center right -40vh;
   background-repeat: no-repeat;
   background-size: auto 100%;
-  opacity: 0.2;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -34,18 +34,27 @@ body > #image {
   right: 36vw;
 }
 
+body > #image {
+  background-image: url('mandala.svg');
+  opacity: 0.4;
+}
+
+body > #clock > div {
+  opacity: 0.2;
+}
+
 body > #names {
   font-size: 3vw;
   position: absolute;
-  bottom: 7.2vw;
-  left: 8.4vw;
+  bottom: 6vw;
+  left: 7.2vw;
 }
 
 body > #menu {
   font-size: 1.8vw;
   position: absolute;
-  top: 7.2vw;
-  left: 8.4vw;
+  top: 6vw;
+  left: 7.2vw;
 }
 
 body > #menu > a {
@@ -111,6 +120,20 @@ body > #content > #rsvp {
   justify-content: center;
   height: 100vh;
   position: relative;
+}
+
+body > #content > #rsvp > #clock {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 4vw;
+}
+
+body > #content > #rsvp > #clock > .element {
+  background-image: url("small.svg");
+  background-size: 100%;
+  display: inline-block;
 }
 
 body > #content > #rsvp > .location {
