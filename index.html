@@ -6,18 +6,48 @@
     <title>Shaunak & Sneha</title>
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="style.css">
+    <script src="jquery.min.js"></script>
     <script src="script.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCp36zLKgeHWl6lrc10nbCz41U0fTy8YII&callback=googleMapsCallback"></script>
   </head>
   <body>
-    <div class="names header">Shaunak &amp; Sneha</div>
-    <div class="content">
-      <div class="welcome">
+    <div id="names" class="header">Shaunak &amp; Sneha</div>
+    <div id="menu">
+      <a class="smooth-scroll" href="#rsvp">RSVP</a>
+      <a class="smooth-scroll" href="#location">Location</a>
+      <a class="smooth-scroll" href="#schedule">Schedule</a>
+    </div>
+    <div id="content">
+      <div id="rsvp" class="scroll-target">
         <div class="location header">Tysons, Virginia</div>
         <div class="dates">September 15-16, 2018</div>
       </div>
 
-      <div class="block schedule">
+      <div id="location" class="block scroll-target">
+        <div class="header">Location</div>
+        <div class="line"></div>
+        <div class="information">
+          <div class="name">Sheraton Tysons Hotel</div>
+          <a class="address" target="_blank"
+             href="https://goo.gl/maps/Yf45nMpCQ1P2">
+              8661 Leesburg Pike, Tysons, VA 22182
+          </a>
+          <a class="website" target="_blank"
+             href="http://www.sheratontysonscorner.com">
+            www.sheratontysonscorner.com
+          </a>
+          <a class="number" href="tel:+17034481234">(703) 448-1234</a>
+          <div class="ad">Join group "Kannan" for a $50 / night block rate.</div>
+        </div>
+        <a class="map-container" target="_blank"
+           href="https://goo.gl/maps/Yf45nMpCQ1P2">
+          <div class="map">Loading Google Maps...</div>
+        </a>
+      </div>
+
+      <div class="line"></div>
+
+      <div id="schedule" class="block scroll-target">
         <div class="header">Schedule</div>
 
         <div class="divider">
@@ -84,13 +114,6 @@
             <div class="details">Indian buffet.</div>
           </div>
         </div>
-      </div>
-
-      <div class="line"></div>
-
-      <div class="block travel">
-        <div class="header">Travel</div>
-        <div class="map">Loading Google Maps...</div>
       </div>
     </div>
   </body>

@@ -19,18 +19,41 @@ div.line {
   width: 100%;
 }
 
-/* The names section to the bottom left. */
+/* The names and menu sections to the left. */
 
-body > div.names {
+body > #names {
   font-size: 3.6vw;
   position: absolute;
   bottom: 7.2vw;
   left: 8.4vw;
 }
 
+body > #menu {
+  font-size: 1.8vw;
+  position: absolute;
+  top: 7.2vw;
+  left: 7.2vw;
+}
+
+body > #menu > a {
+  color: #444;
+  display: block;
+  padding: 0.3vw 1.2vw;
+  text-decoration: none;
+}
+
+body > #menu > a.active {
+  color: black;
+}
+
+body > #menu > a:active,
+body > #menu > a:hover {
+  background-color: #D8E8F0;
+}
+
 /* General styling for the content section. */
 
-body > .content {
+body > #content {
   box-shadow: 0 0 2vw #888;
   float: right;
   overflow-y: scroll;
@@ -38,26 +61,26 @@ body > .content {
   width: 36vw;
 }
 
-body > .content > div {
+body > #content > div {
   text-align: center;
   width: 100%;
 }
 
-body > .content > div.block {
+body > #content > div.block {
   background-color: white;
   box-sizing: border-box;
   padding: 4.8vw;
   width: 100%;
 }
 
-body > .content > div.block > div.header {
+body > #content > div.block > div.header {
   font-size: 1.8vw;
   margin-bottom: 2.4vw;
 }
 
-/* The welcome block, the first block in the content section. */
+/* The RSVP block, the first block in the content section. */
 
-body > .content > .welcome {
+body > #content > #rsvp {
   background-color: #D8E8F0;
   display: flex;
   flex-direction: column;
@@ -65,23 +88,61 @@ body > .content > .welcome {
   height: 100vh;
 }
 
-body > .content > .welcome > .location {
+body > #content > #rsvp > .location {
   font-size: 1.8vw;
   margin-bottom: 1.8vw;
 }
 
-body > .content > .welcome > .dates {
+body > #content > #rsvp > .dates {
   font-size: 1.2vw;
 }
 
-/* The schedule block, the second block in the content section. */
+/* The location block style. */
 
-body > .content > .schedule > .divider {
+body > #content > #location > .information {
+  margin-bottom: 1.2vw;
+  text-align: left;
+}
+
+body > #content > #location > .information > .ad,
+body > #content > #location > .information > .name {
+  margin: 1.8vw 0;
+}
+
+body > #content > #location > .information > a {
+  color: #444;
+  display: block;
+  padding: 0.3vw 0;
+  text-decoration: none;
+}
+
+body > #content > #location > .information > a:active,
+body > #content > #location > .information > a:hover {
+  background-color: #D8E8F0;
+}
+
+body > #content > #location > .map-container {
+  cursor: pointer;
+}
+
+body > #content > #location > .map-container > .map {
+  border: 1px dashed #444;
+  font-size: 1.2vw;
+  line-height: 16vw;
+  margin: 1.8vw auto 0;
+  pointer-events: none;
+  height: 16vw;
+  width: 24vw;
+}
+
+/* The schedule block style. */
+
+body > #content > #schedule > .divider {
   margin: 3.6vw 0 2.4vw;
   position: relative;
 }
 
-body > .content > .schedule > .divider > .day {
+body > #content > #schedule > .divider > .day {
   background-color: white;
   font-size: 0.9vw;
   font-weight: bold;
@@ -91,50 +152,38 @@ body > .content > .schedule > .divider > .day {
   top: -0.45vw;
 }
 
-body > .content > .schedule > .event {
+body > #content > #schedule > .event {
   display: flex;
   margin-bottom: 2.4vw;
   padding: 0 1.8vw;
 }
 
-body > .content > .schedule > .event:last-child {
+body > #content > #schedule > .event:last-child {
   margin-bottom: 0;
 }
 
-body > .content > .schedule > .event > .time {
+body > #content > #schedule > .event > .time {
   flex: 3;
   font-size: 0.9vw;
   font-weight: bold;
   padding: 0.24vw 0.6vw 0 0;
 }
 
-body > .content > .schedule > .event > .time > .piece {
+body > #content > #schedule > .event > .time > .piece {
   display: inline-block;
 }
 
-body > .content > .schedule > .event > .information {
+body > #content > #schedule > .event > .information {
   flex: 5;
   text-align: left;
 }
 
-body > .content > .schedule > .event > .information > .title {
+body > #content > #schedule > .event > .information > .title {
   font-size: 1.2vw;
   margin-bottom: 0.36vw;
 }
 
-body > .content > .schedule > .event > .information > .details {
+body > #content > #schedule > .event > .information > .details {
   color: #444;
   font-size: 0.9vw;
-}
-
-/* The travel block, the third block in the content section. */
-
-body > .content > .travel > .map {
-  border: 1px dashed #444;
-  font-size: 1.2vw;
-  line-height: 16vw;
-  margin: 0 auto;
-  pointer-events: none;
-  height: 16vw;
-  width: 24vw;
 }
