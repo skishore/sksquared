@@ -87,7 +87,7 @@ body > #menu > a:hover {
 /* General styling for the content section. */
 
 body > #content {
-  box-shadow: 0 0 2vw #888;
+  box-shadow: 0 0 1vw #444;
   float: right;
   overflow-y: scroll;
   height: 100vh;
@@ -122,23 +122,19 @@ body > #content > #rsvp {
   position: relative;
 }
 
-body > #content > #rsvp > #clock {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 4vw;
-}
-
-body > #content > #rsvp > #clock > .element {
-  background-image: url("small.svg");
-  background-size: 100%;
-  display: inline-block;
+body > #content > #rsvp > .portrait {
+  background-image: url('DSC05408.JPG');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  box-shadow: inset 0 0 1vw #000000;
+  margin: 0 auto 1.8vw;
+  height: 16vw;
+  width: 24vw;
 }
 
 body > #content > #rsvp > .location {
   font-size: 1.8vw;
-  margin-bottom: 1.8vw;
+  margin-bottom: 0.6vw;
 }
 
 body > #content > #rsvp > .dates {
@@ -200,15 +196,26 @@ body > #content > #location > .information > a:hover {
 
 body > #content > #location > .map-container {
   cursor: pointer;
+  display: block;
+  position: relative;
 }
 
 body > #content > #location > .map-container > .map {
-  border: 1px dashed #444;
   font-size: 1.2vw;
   line-height: 16vw;
-  margin: 1.8vw auto 0;
+  margin: 0 auto;
   pointer-events: none;
   height: 16vw;
+  width: 24vw;
+}
+
+body > #content > #location > .map-container > .map-shadow {
+  box-shadow: inset 0 0 1vw #888;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
   width: 24vw;
 }
 
