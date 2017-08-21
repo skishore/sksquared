@@ -74,8 +74,7 @@ body > #menu > a.active > div:after {
   display: inline-block;
 }
 
-body > #menu > a:active,
-body > #menu > a:hover {
+body > #menu > a:active {
   background-color: #CCDEE5;
 }
 
@@ -149,8 +148,7 @@ body > #content > #rsvp > .rsvp {
   width: fit-content;
 }
 
-body > #content > #rsvp > .rsvp:active,
-body > #content > #rsvp > .rsvp:hover {
+body > #content > #rsvp > .rsvp:active {
   background-color: white;
 }
 
@@ -189,8 +187,7 @@ body > #content > #location > .information > a {
   text-decoration: none;
 }
 
-body > #content > #location > .information > a:active,
-body > #content > #location > .information > a:hover {
+body > #content > #location > .information > a:active {
   background-color: #CCDEE5;
 }
 
@@ -375,5 +372,19 @@ body > #content > #schedule > .event > .information > .details {
 
   body > #content > #schedule > .event > .time > .piece {
     display: block;
+  }
+}
+
+@media not all and (max-width: 768px) {
+  body > #menu > a:hover {
+    background-color: #CCDEE5;
+  }
+
+  body > #content > #rsvp > .rsvp:hover {
+    background-color: white;
+  }
+
+  body > #content > #location > .information > a:hover {
+    background-color: #CCDEE5;
   }
 }
