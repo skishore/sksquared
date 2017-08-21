@@ -25,6 +25,10 @@ function googleMapsCallback() {
   var marker = new google.maps.Marker({map: map, position: center});
 }
 
+function isColumn() {
+  return $('body').height() > 2 * window.innerHeight;
+}
+
 function setHash(value) {
   history && history.replaceState ?
       history.replaceState(undefined, undefined, '#' + value) :
@@ -35,12 +39,17 @@ function smoothScroll(event) {
   event.preventDefault();
   var hash = $(this).attr('href').replace(/^.*?(#|$)/,'');
   var offset = $('#' + hash).offset().top;
-  var body = $('body');
-  var element = body.height() > 2 * window.innerHeight ? body : $('#content');
-  var destination = element.scrollTop() + offset;
-  element.animate({scrollTop: destination}, 500, function() {
-    setHash(hash);
-  });
+  if (isColumn()) {
+    var destination = offset - $('#menu').height();
+    $('body').animate({scrollTop: destination}, 500, function() {
+      setHash(hash);
+    });
+  } else {
+    var destination = $('#content').scrollTop() + offset;
+    $('#content').animate({scrollTop: destination}, 500, function() {
+      setHash(hash);
+    });
+  }
   return false;
 }
 
@@ -71,10 +80,14 @@ function tick() {
 
 function updateActiveLink() {
   var elements = $('.scroll-target');
-  var midpoint = window.innerHeight / 2;
+  var midpoint = window.innerHeight / 2 + $('body').scrollTop();
   for (var i = 0; i < elements.length; i++) {
     var element = $(elements[i]);
-    if (element.offset().top + element.outerHeight() > midpoint) {
+    var offset = element.offset().top;
+    if (offset > midpoint) {
+      $('.smooth-scroll').removeClass('active');
+      setHash('');
+    } else if (offset + element.outerHeight() > midpoint) {
       var hash = element[0].id;
       var link = $('.smooth-scroll[href="#' + hash + '"]');
       if (!link.hasClass('active')) {
@@ -90,6 +103,7 @@ function updateActiveLink() {
 $(window).on('DOMContentLoaded', function() {
   $('.smooth-scroll').on('click', smoothScroll);
   $('#content').on('scroll', updateActiveLink);
+  $(window).on('scroll', updateActiveLink);
   updateActiveLink();
   startClock();
 });

@@ -282,28 +282,46 @@ body > #content > #schedule > .event > .information > .details {
 
   body > #image,
   body > #clock > div {
-    margin-bottom: 16vh;
+    margin: 6vh 0 12vh;
     right: 0;
-    height: 84vh;
+    height: 82vh;
     width: 100vw;
   }
 
   body > #names {
+    font-size: 36px;
+    transform: translateY(-100%);
     left: 8vh;
     top: 96vh;
     bottom: auto;
     height: auto;
-    transform: translateY(-100%);
   }
 
   body > #menu {
-    top: 8vh;
-    left: 6vh;
+    background-color: white;
+    border-bottom: 1px solid #CCDEE5;
+    display: flex;
+    font-size: 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
   }
 
 
   body > #menu > a {
     color: #222;
+    display: inline-block;
+    flex: 1;
+    margin: 0;
+    height: 6vh;
+    line-height: 6vh;
+    text-align: center;
+  }
+
+  body > #menu > a.active {
+    background-color: #CCDEE5;
   }
 
   body > #menu > a > div {
@@ -328,6 +346,10 @@ body > #content > #schedule > .event > .information > .details {
 
   body > #content > div.block {
     padding: 9.6vw;
+  }
+
+  body > #content > #rsvp {
+    height: 94vh;
   }
 
   body > #content > #rsvp > #rough-border {
