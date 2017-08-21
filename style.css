@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(223, 200, 158);
+  background: rgb(223, 200, 158);
   color: #222;
   font-family: proxima, Roboto, "Helvetica Neue", sans-serif;
   margin: 0;
@@ -24,23 +24,19 @@ div.line {
 body > #image,
 body > #clock > div {
   background-image: url('mandala.svg');
-  background-position: center right -40vh;
+  background-position: center right -32vh;
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: auto 96%;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
-  right: 40vw;
+  right: 36vw;
 }
 
 body > #image {
   background-image: url('mandala.svg');
-  opacity: 0.4;
-}
-
-body > #clock > div {
-  opacity: 0.2;
+  opacity: 0.6;
 }
 
 body > #names {
@@ -91,7 +87,7 @@ body > #content {
   float: right;
   overflow-y: scroll;
   height: 100vh;
-  width: 40vw;
+  width: 36vw;
 }
 
 body > #content > div {
@@ -102,7 +98,7 @@ body > #content > div {
 body > #content > div.block {
   background-color: white;
   box-sizing: border-box;
-  padding: 4.8vw;
+  padding: 3.6vw;
   width: 100%;
 }
 
@@ -128,8 +124,8 @@ body > #content > #rsvp > .portrait {
   background-size: auto 100%;
   box-shadow: inset 0 0 1vw #000000;
   margin: 0 auto 1.8vw;
-  height: 16vw;
-  width: 24vw;
+  height: 18vw;
+  width: 27vw;
 }
 
 body > #content > #rsvp > .location {
@@ -209,8 +205,8 @@ body > #content > #location > .map-container > .map {
   line-height: 16vw;
   margin: 0 auto;
   pointer-events: none;
-  height: 16vw;
-  width: 24vw;
+  height: 18vw;
+  width: 27vw;
 }
 
 body > #content > #location > .map-container > .map-shadow {
@@ -220,7 +216,7 @@ body > #content > #location > .map-container > .map-shadow {
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
-  width: 24vw;
+  width: 27vw;
 }
 
 /* The schedule block style. */

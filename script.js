@@ -1,9 +1,9 @@
-var kNumDigits = 25;
+var kNumDigits = 26;
 var kStartTime = new Date(2018, 8, 15, 16, 0, 0).getTime();
 
 var digit_states = [];
 for (var i = 0; i < kNumDigits; i++) {
-  digit_states.push(false);
+  digit_states.push(null);
 }
 
 function googleMapsCallback() {
@@ -44,7 +44,7 @@ function smoothScroll(event) {
 
 function startClock() {
   for (var i = 0; i < kNumDigits; i++) {
-    var image = 'url("digits/' + i + '.svg")';
+    var image = 'url("digits/' + (i + 3) + '.svg")';
     $('#clock').append($('<div>').css({'background-image': image}));
   }
   tick();
@@ -60,7 +60,7 @@ function tick() {
   var digits = $('#clock').children();
   for (var i = 0; i < kNumDigits; i++) {
     if (digit_states[i] !== target[i]) {
-      $(digits[i]).css({opacity: target[i] ? 0.8 : 0.2});
+      $(digits[i]).css({opacity: target[i] ? 1.0 : 0.2});
       digit_states[i] = target[i];
     }
   }
