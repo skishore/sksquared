@@ -35,8 +35,10 @@ function smoothScroll(event) {
   event.preventDefault();
   var hash = $(this).attr('href').replace(/^.*?(#|$)/,'');
   var offset = $('#' + hash).offset().top;
-  var destination = $('#content').scrollTop() + offset;
-  $('#content').animate({scrollTop: destination}, 500, function() {
+  var body = $('body');
+  var element = body.height() > 2 * window.innerHeight ? body : $('#content');
+  var destination = element.scrollTop() + offset;
+  element.animate({scrollTop: destination}, 500, function() {
     setHash(hash);
   });
   return false;

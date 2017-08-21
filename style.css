@@ -82,6 +82,7 @@ body > #menu > a:hover {
 /* General styling for the content section. */
 
 body > #content {
+  background-color: white;
   box-shadow: 0 0 18px #444;
   float: right;
   overflow-y: scroll;
@@ -254,6 +255,7 @@ body > #content > #schedule > .event > .time {
 
 body > #content > #schedule > .event > .time > .piece {
   display: inline-block;
+  text-align: right;
 }
 
 body > #content > #schedule > .event > .information {
@@ -269,4 +271,87 @@ body > #content > #schedule > .event > .information > .title {
 body > #content > #schedule > .event > .information > .details {
   color: #444;
   font-size: 15px;
+}
+
+/* Support for mobile phones. */
+
+@media only screen and (max-width: 768px) {
+  body {
+    overflow-y: scroll;
+  }
+
+  body > #image,
+  body > #clock > div {
+    margin-bottom: 16vh;
+    right: 0;
+    height: 84vh;
+    width: 100vw;
+  }
+
+  body > #names {
+    left: 8vh;
+    top: 96vh;
+    bottom: auto;
+    height: auto;
+    transform: translateY(-100%);
+  }
+
+  body > #menu {
+    top: 8vh;
+    left: 6vh;
+  }
+
+
+  body > #menu > a {
+    color: #222;
+  }
+
+  body > #menu > a > div {
+    display: none;
+  }
+
+  body > #image,
+  body > #clock > div {
+  }
+
+  body > #image {
+    float: right;
+    position: initial;
+  }
+
+  body > #content {
+    box-shadow: none;
+    height: auto;
+    overflow: hidden;
+    width: 100vw;
+  }
+
+  body > #content > div.block {
+    padding: 9.6vw;
+  }
+
+  body > #content > #rsvp > #rough-border {
+    display: none;
+  }
+
+  body > #content > #rsvp > .portrait,
+  body > #content > #location > .map-container > .map,
+  body > #content > #location > .map-container > .map-shadow {
+    height: 48vw;
+    width: 72vw;
+  }
+
+  body > #content > #schedule > .event > .time {
+    padding: 0 9px;
+  }
+
+  body > #content > #schedule > .event > .time {
+    display: block;
+    flex: 2;
+    padding: 4px 18px 0 0;
+  }
+
+  body > #content > #schedule > .event > .time > .piece {
+    display: block;
+  }
 }
