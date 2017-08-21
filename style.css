@@ -31,7 +31,7 @@ body > #clock > div {
   top: 0;
   bottom: 0;
   left: 0;
-  right: 36vw;
+  right: 40vw;
 }
 
 body > #image {
@@ -91,7 +91,7 @@ body > #content {
   float: right;
   overflow-y: scroll;
   height: 100vh;
-  width: 36vw;
+  width: 40vw;
 }
 
 body > #content > div {
@@ -180,6 +180,10 @@ body > #content > #location > .information {
 body > #content > #location > .information > .ad,
 body > #content > #location > .information > .name {
   margin: 1.8vw 0;
+}
+
+body > #content > #location > .information > a.address > span {
+  display: inline-block;
 }
 
 body > #content > #location > .information > a {
