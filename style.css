@@ -40,14 +40,14 @@ body > #image {
 }
 
 body > #names {
-  font-size: 3vw;
+  font-size: 42px;
   position: absolute;
   bottom: 6vw;
   left: 7.2vw;
 }
 
 body > #menu {
-  font-size: 1.8vw;
+  font-size: 24px;
   position: absolute;
   top: 6vw;
   left: 7.2vw;
@@ -56,13 +56,13 @@ body > #menu {
 body > #menu > a {
   color: #444;
   display: block;
-  padding: 0.3vw 0.6vw 0.1vw;
+  padding: 4px 12px 0;
   text-decoration: none;
 }
 
 body > #menu > a > div {
   display: inline-block;
-  width: 1.4vw;
+  width: 20px;
 }
 
 body > #menu > a.active {
@@ -82,7 +82,7 @@ body > #menu > a:hover {
 /* General styling for the content section. */
 
 body > #content {
-  box-shadow: 0 0 1vw #444;
+  box-shadow: 0 0 18px #444;
   float: right;
   overflow-y: scroll;
   height: 100vh;
@@ -102,8 +102,8 @@ body > #content > div.block {
 }
 
 body > #content > div.block > div.header {
-  font-size: 1.8vw;
-  margin-bottom: 2.4vw;
+  font-size: 27px;
+  margin-bottom: 36px;
 }
 
 /* The RSVP block, the first block in the content section. */
@@ -120,30 +120,30 @@ body > #content > #rsvp {
 body > #content > #rsvp > .portrait {
   background-image: url('DSC05408.JPG');
   background-repeat: no-repeat;
-  background-size: auto 100%;
-  box-shadow: inset 0 0 1vw #000000;
-  margin: 0 auto 1.8vw;
+  background-size: 100% auto;
+  box-shadow: inset 0 0 18px #000000;
+  margin: 0 auto 27px;
   height: 18vw;
   width: 27vw;
 }
 
 body > #content > #rsvp > .location {
-  font-size: 1.8vw;
-  margin-bottom: 0.6vw;
+  font-size: 27px;
+  margin-bottom: 9px;
 }
 
 body > #content > #rsvp > .dates {
-  font-size: 1.2vw;
-  margin-bottom: 1.8vw;
+  font-size: 18px;
+  margin-bottom: 27px;
 }
 
 body > #content > #rsvp > .rsvp {
   border: 1px solid #222;
-  border-radius: 0.6vw;
+  border-radius: 9px;
   color: #222;
-  font-size: 1.2vw;
-  margin: 0 auto 1.8vw;
-  padding: 0.6vw 1.8vw;
+  font-size: 18px;
+  margin: 0 auto 27px;
+  padding: 9px 27px;
   text-decoration: none;
   width: fit-content;
 }
@@ -162,19 +162,19 @@ body > #content > #rsvp > #rough-border {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 4vw;
+  height: 60px;
 }
 
 /* The location block style. */
 
 body > #content > #location > .information {
-  margin-bottom: 1.2vw;
+  margin-bottom: 27px;
   text-align: left;
 }
 
 body > #content > #location > .information > .ad,
 body > #content > #location > .information > .name {
-  margin: 1.8vw 0;
+  margin: 27px 0;
 }
 
 body > #content > #location > .information > a.address > span {
@@ -184,7 +184,7 @@ body > #content > #location > .information > a.address > span {
 body > #content > #location > .information > a {
   color: #444;
   display: block;
-  padding: 0.3vw 0;
+  padding: 4px 0;
   text-decoration: none;
 }
 
@@ -200,7 +200,7 @@ body > #content > #location > .map-container {
 }
 
 body > #content > #location > .map-container > .map {
-  font-size: 1.2vw;
+  font-size: 18px;
   line-height: 16vw;
   margin: 0 auto;
   pointer-events: none;
@@ -209,7 +209,7 @@ body > #content > #location > .map-container > .map {
 }
 
 body > #content > #location > .map-container > .map-shadow {
-  box-shadow: inset 0 0 1vw #888;
+  box-shadow: inset 0 0 18px #888;
   position: absolute;
   top: 0;
   left: 50%;
@@ -221,24 +221,24 @@ body > #content > #location > .map-container > .map-shadow {
 /* The schedule block style. */
 
 body > #content > #schedule > .divider {
-  margin: 3.6vw 0 2.4vw;
+  margin: 48px 0 32px;
   position: relative;
 }
 
 body > #content > #schedule > .divider > .day {
   background-color: white;
-  font-size: 0.9vw;
+  font-size: 13px;
   font-weight: bold;
-  padding-right: 0.9vw;
+  padding-right: 10px;
   position: absolute;
   text-transform: uppercase;
-  top: -0.45vw;
+  top: -7px;
 }
 
 body > #content > #schedule > .event {
   display: flex;
-  margin-bottom: 2.4vw;
-  padding: 0 1.8vw;
+  margin-bottom: 36px;
+  padding: 0 18px;
 }
 
 body > #content > #schedule > .event:last-child {
@@ -247,9 +247,9 @@ body > #content > #schedule > .event:last-child {
 
 body > #content > #schedule > .event > .time {
   flex: 3;
-  font-size: 0.9vw;
+  font-size: 13px;
   font-weight: bold;
-  padding: 0.24vw 0.6vw 0 0;
+  padding: 4px 9px 0 0;
 }
 
 body > #content > #schedule > .event > .time > .piece {
@@ -257,16 +257,16 @@ body > #content > #schedule > .event > .time > .piece {
 }
 
 body > #content > #schedule > .event > .information {
-  flex: 5;
+  flex: 6;
   text-align: left;
 }
 
 body > #content > #schedule > .event > .information > .title {
-  font-size: 1.2vw;
-  margin-bottom: 0.36vw;
+  font-size: 18px;
+  margin-bottom: 6px;
 }
 
 body > #content > #schedule > .event > .information > .details {
   color: #444;
-  font-size: 0.9vw;
+  font-size: 15px;
 }
