@@ -8,7 +8,7 @@ body {
   width: 100%;
 }
 
-div.header {
+a.header, div.header {
   font-family: Karma, serif;
 }
 
@@ -56,13 +56,12 @@ body > #menu {
 body > #menu > a {
   color: #444;
   display: block;
-  padding: 0.3vw 0.6vw;
+  padding: 0.3vw 0.6vw 0.1vw;
   text-decoration: none;
 }
 
 body > #menu > a > div {
   display: inline-block;
-  line-height: 0;
   width: 1.4vw;
 }
 
@@ -71,8 +70,8 @@ body > #menu > a.active {
 }
 
 body > #menu > a.active > div:after {
-  content: "●";
-  font-size: 1.4vw;
+  content: "=";
+  display: inline-block;
 }
 
 body > #menu > a:active,
@@ -98,7 +97,7 @@ body > #content > div {
 body > #content > div.block {
   background-color: white;
   box-sizing: border-box;
-  padding: 3.6vw;
+  padding: 4.8vw;
   width: 100%;
 }
 
@@ -205,8 +204,8 @@ body > #content > #location > .map-container > .map {
   line-height: 16vw;
   margin: 0 auto;
   pointer-events: none;
-  height: 18vw;
-  width: 27vw;
+  height: 16vw;
+  width: 24vw;
 }
 
 body > #content > #location > .map-container > .map-shadow {
@@ -216,7 +215,7 @@ body > #content > #location > .map-container > .map-shadow {
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
-  width: 27vw;
+  width: 24vw;
 }
 
 /* The schedule block style. */
