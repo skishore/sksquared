@@ -298,6 +298,21 @@ body > #content > #schedule > .event > .information > .title {
   margin-bottom: 6px;
 }
 
+/* The FAQ block style. */
+
+body > #content > #faq > .information {
+  text-align: left;
+}
+
+body > #content > #faq > .information > .question {
+  font-weight: bold;
+  margin: 27px 0 9px;
+}
+
+body > #content > #faq > .information > .answer {
+  margin-bottom: 27px;
+}
+
 /* Support for mobile phones. */
 
 @media only screen and (max-width: 768px) {
