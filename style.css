@@ -70,7 +70,7 @@ body > #menu > a.active {
 }
 
 body > #menu > a.active > div:after {
-  content: "=";
+  content: "~";
   display: inline-block;
 }
 
@@ -144,8 +144,8 @@ body > #content > #rsvp > .rsvp {
   font-size: 18px;
   margin: 0 auto 27px;
   padding: 9px 27px;
-  text-decoration: none;
   width: fit-content;
+  text-decoration: none;
 }
 
 body > #content > #rsvp > .rsvp:active {
@@ -171,7 +171,6 @@ body > #content > #location > .information {
   text-align: left;
 }
 
-body > #content > #location > .information > .ad,
 body > #content > #location > .information > .name {
   margin: 27px 0;
 }
@@ -181,7 +180,7 @@ body > #content > #location > .information > a.address > span {
 }
 
 body > #content > #location > .information > a {
-  color: #444;
+  color: #26a;
   display: block;
   padding: 4px 0;
   text-decoration: none;
@@ -216,6 +215,40 @@ body > #content > #location > .map-container > .map-shadow {
   width: 24vw;
 }
 
+/* The hotels block style. */
+
+body > #content > #hotels > .information {
+  text-align: left;
+}
+
+body > #content > #hotels > .information > .option {
+  margin: 27px 0 9px;
+}
+
+body > #content > #hotels > .information a {
+  color: #26a;
+  display: block;
+  padding: 4px 0;
+  text-decoration: none;
+}
+
+body > #content > #hotels > .information a:active {
+  background-color: #CCDEE5;
+}
+
+body > #content > #hotels > .information > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body > #content > #hotels > .information > ul > li > a:before {
+  color: #222;
+  content: "~";
+  font-family: Karma, serif;
+  margin: 0 4px 0 8px;
+}
+
 /* The schedule block style. */
 
 body > #content > #schedule > .divider {
@@ -235,7 +268,7 @@ body > #content > #schedule > .divider > .day {
 
 body > #content > #schedule > .event {
   display: flex;
-  margin-bottom: 36px;
+  margin-bottom: 18px;
   padding: 0 18px;
 }
 
@@ -263,11 +296,6 @@ body > #content > #schedule > .event > .information {
 body > #content > #schedule > .event > .information > .title {
   font-size: 18px;
   margin-bottom: 6px;
-}
-
-body > #content > #schedule > .event > .information > .details {
-  color: #444;
-  font-size: 15px;
 }
 
 /* Support for mobile phones. */
@@ -385,6 +413,10 @@ body > #content > #schedule > .event > .information > .details {
   }
 
   body > #content > #location > .information > a:hover {
+    background-color: #CCDEE5;
+  }
+
+  body > #content > #hotels > .information a:hover {
     background-color: #CCDEE5;
   }
 }
