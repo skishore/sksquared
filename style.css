@@ -298,6 +298,11 @@ body > #content > #schedule > .event > .information > .title {
   margin-bottom: 6px;
 }
 
+body > #content > #schedule > .event > .information > .details {
+  color: #444;
+  font-size: 15px;
+}
+
 /* The FAQ block style. */
 
 body > #content > #faq > .information {
@@ -311,6 +316,15 @@ body > #content > #faq > .information > .question {
 
 body > #content > #faq > .information > .answer {
   margin-bottom: 27px;
+}
+
+body > #content > #faq > .information a {
+  color: #26a;
+  text-decoration: none;
+}
+
+body > #content > #faq > .information a:active {
+  background-color: #CCDEE5;
 }
 
 /* Support for mobile phones. */
@@ -432,6 +446,10 @@ body > #content > #faq > .information > .answer {
   }
 
   body > #content > #hotels > .information a:hover {
+    background-color: #CCDEE5;
+  }
+
+  body > #content > #faq > .information a:hover {
     background-color: #CCDEE5;
   }
 }
