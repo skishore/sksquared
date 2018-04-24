@@ -138,9 +138,10 @@ body > #content > #rsvp > .dates {
 }
 
 body > #content > #rsvp > .rsvp {
-  border: 1px solid #222;
+  background-color: indianred;
+  border: 1px solid #800;
   border-radius: 9px;
-  color: #222;
+  color: white;
   font-size: 18px;
   margin: 0 auto 27px;
   padding: 9px 27px;
@@ -149,7 +150,8 @@ body > #content > #rsvp > .rsvp {
 }
 
 body > #content > #rsvp > .rsvp:active {
-  background-color: white;
+  border: 1px solid #400;
+  background-color: #A44;
 }
 
 body > #content > #rsvp > #rough-border {
@@ -438,7 +440,8 @@ body > #content > #faq > .information a:active {
   }
 
   body > #content > #rsvp > .rsvp:hover {
-    background-color: white;
+    border: 1px solid #400;
+    background-color: #A44;
   }
 
   body > #content > #location > .information > a:hover {
