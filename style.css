@@ -199,8 +199,9 @@ body > #content > #location > .map-container {
 }
 
 body > #content > #location > .map-container > .map {
-  font-size: 18px;
-  line-height: 16vw;
+  background-image: url('hotel.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
   margin: 0 auto;
   pointer-events: none;
   height: 16vw;

@@ -6,25 +6,6 @@ for (var i = 0; i < kNumDigits; i++) {
   digit_states.push(null);
 }
 
-function googleMapsCallback() {
-  var elements = document.getElementsByClassName('map');
-  if (elements.length !== 1) {
-    throw Error('Expected 1 .map element; got: ' + elements.length);
-  }
-  var center = {lat: 38.9309749, lng: -77.246181};
-  var map = new google.maps.Map(elements[0], {
-    center: center,
-    fullscreenControl: false,
-    mapTypeControl: false,
-    panControl: false,
-    scaleControl: false,
-    streetViewControl: false,
-    zoom: 16,
-    zoomControl: false,
-  });
-  var marker = new google.maps.Marker({map: map, position: center});
-}
-
 function isColumn() {
   return $('body').height() > 2 * window.innerHeight;
 }
