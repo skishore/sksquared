@@ -106,9 +106,9 @@ body > #content > div.block > div.header {
   margin-bottom: 36px;
 }
 
-/* The RSVP block, the first block in the content section. */
+/* The welcome block, the first block in the content section. */
 
-body > #content > #rsvp {
+body > #content > #welcome {
   background-color: #CCDEE5;
   display: flex;
   flex-direction: column;
@@ -117,7 +117,7 @@ body > #content > #rsvp {
   position: relative;
 }
 
-body > #content > #rsvp > .portrait {
+body > #content > #welcome > .portrait {
   background-image: url('DSC05408.JPG');
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -127,34 +127,17 @@ body > #content > #rsvp > .portrait {
   width: 27vw;
 }
 
-body > #content > #rsvp > .location {
+body > #content > #welcome > .location {
   font-size: 27px;
   margin-bottom: 9px;
 }
 
-body > #content > #rsvp > .dates {
+body > #content > #welcome > .dates {
   font-size: 18px;
   margin-bottom: 27px;
 }
 
-body > #content > #rsvp > .rsvp {
-  background-color: indianred;
-  border: 1px solid #800;
-  border-radius: 9px;
-  color: white;
-  font-size: 18px;
-  margin: 0 auto 27px;
-  padding: 9px 27px;
-  width: fit-content;
-  text-decoration: none;
-}
-
-body > #content > #rsvp > .rsvp:active {
-  border: 1px solid #400;
-  background-color: #A44;
-}
-
-body > #content > #rsvp > #rough-border {
+body > #content > #welcome > #rough-border {
   background-image: url('border.svg');
   background-position: center top;
   background-repeat: no-repeat;
@@ -405,15 +388,15 @@ body > #content > #faq > .information a:active {
     padding: 9.6vw;
   }
 
-  body > #content > #rsvp {
+  body > #content > #welcome {
     height: 94vh;
   }
 
-  body > #content > #rsvp > #rough-border {
+  body > #content > #welcome > #rough-border {
     display: none;
   }
 
-  body > #content > #rsvp > .portrait,
+  body > #content > #welcome > .portrait,
   body > #content > #location > .map-container > .map,
   body > #content > #location > .map-container > .map-shadow {
     height: 48vw;
@@ -438,11 +421,6 @@ body > #content > #faq > .information a:active {
 @media not all and (max-width: 768px) {
   body > #menu > a:hover {
     background-color: #CCDEE5;
-  }
-
-  body > #content > #rsvp > .rsvp:hover {
-    border: 1px solid #400;
-    background-color: #A44;
   }
 
   body > #content > #location > .information > a:hover {
